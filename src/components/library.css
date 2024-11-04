@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0f1a;
+}
+
+.library-container {
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #141418);
+    color: #f0f0f5;
+}
+
+.library-container h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #ff6f61;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.library-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.library-item {
+    width: 60%;
+    background: linear-gradient(145deg, #292943, #1e1e2f);
+    padding: 20px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #f0f0f5;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.4s ease, transform 0.3s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.library-item:hover {
+    background: linear-gradient(145deg, #3b3b5e, #2b2b3d);
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.albums-grid, .artists-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.album-card, .artist-card {
+    background: linear-gradient(145deg, #23233a, #1a1a2b);
+    width: 200px;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.album-card:hover, .artist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6);
+}
+
+.album-cover, .artist-cover {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.songs-list {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+    background: linear-gradient(145deg, #1b1b2f, #141418);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.song-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(145deg, #292943, #1e1e2f);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 1.1rem;
+}
+
+.song-item:hover {
+    background: linear-gradient(145deg, #3b3b5e, #2b2b3d);
+    transform: scale(1.03);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.song-title {
+    flex: 1;
+}
+
+.song-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.song-icons .icon {
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.song-icons .icon:hover {
+    color: #ff6f61;
+}
+
+.back-button {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+}
+
+.back-button:hover {
+    background: #e64e4b;
+}
+
+@media (max-width: 768px) {
+    .library-item {
+        width: 80%;
+    }
+
+    .album-card, .artist-card {
+        width: 90%;
+    }
+
+    .library-container h2 {
+        font-size: 2.2rem;
+    }
+}

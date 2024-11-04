@@ -1,0 +1,78 @@
+/* src/components/register.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e1e2f;
+  color: #f3f3f3;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 350px;
+  padding: 40px;
+  background-color: #2a2a3b;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #ff6f61;
+}
+
+.card input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3a3a4f;
+  color: #f3f3f3;
+  outline: none;
+}
+
+.card input::placeholder {
+  color: #b0b0c3;
+}
+
+.card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background-color: #ff5a4c;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.message a {
+  color: #ff6f61;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}

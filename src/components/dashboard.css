@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e1e2f;
+  color: #f3f3f3;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2a2a3b;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  color: #ff6f61;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-menu li {
+  padding: 15px 0; /* Space above and below the menu items */
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+.nav-menu li:hover {
+  background-color: #38384d;
+}
+
+.content {
+  flex: 1;
+  padding: 40px; /* Padding for the content area */
+  overflow-y: auto;
+  text-align: center;
+}
+
+.content h2 {
+  margin-bottom: 10px; /* Adds space below the welcome message */
+}
+
+.content p {
+  margin-bottom: 30px; /* Space below the personalized dashboard message */
+}
+
+.playlist-preview {
+  background-color: #2a2a3b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.song-cards {
+  display: flex;
+  flex-direction: column; /* Stack song cards vertically */
+  align-items: center; /* Center the song cards */
+  gap: 10px; /* Adds space between song cards */
+}
+
+.song-card {
+  width: 100%; /* Ensures cards take full width available */
+  max-width: 300px; /* Limits card width */
+  padding: 10px; /* Padding inside each card */
+  margin: 10px 0; /* Margin to create space around each card */
+  border-radius: 10px; /* Rounded corners for the cards */
+  background-color: #3a3a4a; /* Background color for song cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for cards */
+  display: flex;
+  flex-direction: column; /* Stack content vertically in card */
+  align-items: center; /* Center content */
+}
+
+.song-card button {
+  padding: 10px 20px; /* Adjust padding for the button */
+  background-color: #ff6f61; /* Background color for the button */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  color: white; /* Text color */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+  margin-top: 5px; /* Add space between text and button */
+}
+
+.song-card button:hover {
+  background-color: #e55d51; /* Slightly darker on hover */
+}
+
+.logout-button {
+  margin-top: auto; /* Push logout button to the bottom */
+  padding: 12px 24px; /* Padding for the button */
+  background-color: #ff6f61; /* Background color for the button */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  color: white; /* Text color */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+}

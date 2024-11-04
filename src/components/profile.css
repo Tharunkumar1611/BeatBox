@@ -1,0 +1,25 @@
+/* profile.css */
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px; /* Space below the profile */
+  }
+  
+  .profile-circle {
+    width: 70px; /* Set width for circular placeholder */
+    height: 70px; /* Set height for circular placeholder */
+    border-radius: 50%; /* Round shape */
+    background-color: #ff6f61; /* Background color for circle */
+    margin: 0 auto 10px; /* Centered with space below */
+  }
+  
+  .profile-name {
+    font-size: 18px; /* Font size for name */
+    color: #ff6f61; /* Color for name */
+  }
+  
+  .profile-email {
+    font-size: 14px; /* Font size for email */
+    color: #f3f3f3; /* Light color for email */
+  }
+  

@@ -1,0 +1,129 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2f; /* Dark background for the body */
+    color: #f3f3f3; /* Light text color */
+}
+
+.playlist-container {
+    padding: 50px; /* Padding around the container */
+    text-align: center; /* Center text */
+    max-width: 800px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.playlist-container h2 {
+    font-size: 2.5rem; /* Large heading font size */
+    color: #ff6f61; /* Color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.add-playlist-section, .add-song-section {
+    display: flex;
+    gap: 10px; /* Space between input and button */
+    margin-top: 20px; /* Space above sections */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Added margin to create space below the add playlist section */
+.add-playlist-section {
+    margin-bottom: 30px; /* Space between the add playlist section and the playlist */
+}
+
+.add-button {
+    padding: 10px 20px; /* Padding for the add button */
+    background-color: #5bc0de; /* Button background color */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #fff; /* Text color */
+}
+
+.add-button:hover {
+    background-color: #3a9bb6; /* Darker blue on hover */
+}
+
+.playlist-section {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center items */
+    gap: 15px; /* Space between playlist cards */
+}
+
+.playlist-card {
+    padding: 20px; /* Padding inside each card */
+    background: linear-gradient(145deg, #2e2e40, #1c1c2b); /* Gradient background */
+    border-radius: 12px; /* Rounded corners */
+    color: #b0b0c3; /* Text color inside cards */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Cards take full width */
+    max-width: 250px; /* Limit card width */
+    position: relative; /* For positioning delete button */
+    display: flex; /* Flexbox for card content */
+    justify-content: space-between; /* Space between title and delete button */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below each card */
+    transition: transform 0.3s ease; /* Transition effect */
+}
+
+.playlist-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.delete-button {
+    padding: 5px 10px; /* Padding inside the delete button */
+    background-color: #ff4d4d; /* Red background */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    color: #fff; /* Text color */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Transition effect */
+}
+
+.delete-button:hover {
+    background-color: #ff3333; /* Darker red on hover */
+}
+
+.song-item {
+    display: flex; /* Flexbox for song item */
+    justify-content: space-between; /* Space between song title and controls */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Padding for song item */
+    background: #2e2e40; /* Background color for song item */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px 0; /* Space above and below song item */
+}
+
+.song-controls button {
+    padding: 5px; /* Padding for control buttons */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    background: transparent; /* Transparent background */
+    font-size: 1.2rem; /* Font size for buttons */
+    transition: transform 0.2s; /* Transition effect */
+    margin-right: 10px; /* Space between buttons */
+}
+
+.play-button {
+    color: #5bc0de; /* Color for play button */
+}
+
+.like-button {
+    color: #b0b0c3; /* Default color for like button */
+    transition: color 0.2s ease; /* Transition for color change */
+}
+
+.like-button.liked {
+    color: #ff6f61; /* Color when liked */
+}
+
+.share-button {
+    color: #4caf50; /* Color for share button */
+}
